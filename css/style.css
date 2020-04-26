@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #444;
+  padding: 0 10rem;
+  box-sizing: border-box; }
+
+.border {
+  border: 1px solid black; }
+
+.headercontainer {
+  margin-top: 5rem;
+  height: calc(100vh - 3rem);
+  padding-right: 0 !important;
+  width: calc(100% + 10rem); }
+
+input:focus {
+  outline: 0; }
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 3rem; }
+  .nav__logo {
+    flex: 1;
+    position: relative; }
+    .nav__logo--top {
+      font-family: 'Merriweather', serif;
+      color: #FA744F;
+      font-size: 3rem; }
+    .nav__logo--bottom {
+      color: #024249;
+      text-transform: uppercase;
+      position: absolute;
+      top: 4rem; }
+  .nav__listcontainer {
+    flex: 1;
+    display: flex; }
+  .nav__list {
+    width: 100%;
+    list-style: none;
+    flex: 1;
+    display: flex;
+    align-items: center; }
+    .nav__list--item {
+      flex: 1;
+      font-size: 1.5rem;
+      width: auto; }
+    .nav__list--link {
+      text-decoration: none; }
+      .nav__list--link:visited {
+        color: #444; }
+      .nav__list--link:hover {
+        color: #F79071; }
+      .nav__list--link-bold {
+        color: #FA744F !important;
+        font-weight: 600; }
+        .nav__list--link-bold:hover {
+          color: #444 !important; }
+
+.header {
+  height: calc(100% - 11rem);
+  margin-top: 3rem;
+  display: flex; }
+  .header__left {
+    flex: 1; }
+    .header__left--items {
+      height: 100%;
+      padding: 20rem 0;
+      position: relative; }
+    .header__left--title-1 {
+      font-family: 'Merriweather', serif;
+      color: #024249;
+      font-size: 4rem;
+      position: absolute;
+      top: 18rem; }
+    .header__left--title-2 {
+      font-family: 'Merriweather', serif;
+      color: #FA744F;
+      font-size: 9rem; }
+    .header__left--subtitle {
+      font-size: 1.9rem;
+      padding-top: 10rem;
+      width: 40%; }
+    .header__left--btn {
+      background-color: #024249;
+      color: #fff;
+      border: none;
+      width: 15rem;
+      height: 4rem;
+      border-radius: 3px;
+      margin-top: 3rem;
+      font-size: 1.5rem;
+      font-family: 'Montserrat', serif; }
+      .header__left--btn:hover {
+        cursor: pointer;
+        background-color: #16817A; }
+      .header__left--btn:active {
+        transform: translate(0, 2px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+  .header__right {
+    flex: 1;
+    position: relative; }
+  .header__curve {
+    color: #fff;
+    text-align: right; }
+    .header__curve svg {
+      display: block !important; }
+  .header__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 90%; }

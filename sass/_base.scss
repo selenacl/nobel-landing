@@ -1,0 +1,35 @@
+@import "variables";
+
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-text;
+    padding: 0 10rem;
+    box-sizing: border-box;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.headercontainer {
+    margin-top: 5rem;
+    height: calc(100vh - 3rem);
+    padding-right: 0!important;
+    width: calc(100% + 10rem);
+}
+
+input:focus {outline:0;}
