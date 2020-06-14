@@ -34,6 +34,9 @@ body {
 .testdrive {
   height: 125vh; }
 
+.cars {
+  height: 100vh; }
+
 input:focus {
   outline: 0; }
 
@@ -284,9 +287,6 @@ input:focus {
 
 .testdrive {
   display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
   padding-top: 25rem;
   padding-right: 20rem; }
   .testdrive__left {
@@ -310,13 +310,41 @@ input:focus {
       border-radius: 3px;
       font-size: 1.5rem !important; }
   .testdrive__img {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    height: 40%;
-    width: 40%;
-    z-index: 10; }
+    height: 120%;
+    width: 120%;
+    z-index: 10;
+    margin-left: 20rem; }
   .testdrive__bg {
-    width: 100%;
+    width: 50%;
     max-height: 100%;
-    min-height: 100%; }
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -10; }
+
+.cars {
+  display: flex;
+  margin-top: 3rem;
+  padding-right: 20rem; }
+  .cars__left {
+    flex: 1; }
+  .cars__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+  .cars__group {
+    padding-right: 5rem;
+    flex: 1;
+    padding-top: 5rem; }
+    .cars__group--title {
+      font-family: 'Merriweather', serif;
+      color: #024249;
+      font-size: 3rem; }
+    .cars__group--subtitle {
+      color: #FA744F;
+      font-size: 1.7rem;
+      padding-bottom: 3rem; }
+    .cars__group--text {
+      font-size: 1.5rem;
+      line-height: 4rem; }

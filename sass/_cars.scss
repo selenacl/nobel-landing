@@ -1,0 +1,40 @@
+@import "variables";
+
+.cars {
+    display: flex;
+    margin-top: 3rem;
+    padding-right: 20rem;
+
+    &__left {
+        flex: 1;
+    }
+
+    &__right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__group {
+        padding-right: 5rem;
+        flex: 1;
+        padding-top: 5rem;
+
+        &--title {
+            font-family: 'Merriweather', serif;
+            color: $color-teal-primary;
+            font-size: 3rem;
+        }
+
+        &--subtitle {
+            color: $color-orange-primary;
+            font-size: 1.7rem;
+            padding-bottom: 3rem;
+        }
+
+        &--text {
+            font-size: 1.5rem;
+            line-height: 4rem;
+        }
+    }
+}
